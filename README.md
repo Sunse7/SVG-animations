@@ -1,2 +1,2 @@
-# SVG-animations
+# Animations and transitions
  
