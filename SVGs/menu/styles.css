@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+.toggle {
+    background-color: rgb(248, 95, 95);
+    border: none;
+    position: absolute;
+    z-index: 1;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+    transition: all 0.3s;
+    width: 0;
+    transform: translateX(-60);
+    height: 100%;
+}
+
+nav.open {
+    padding: 5rem 1rem;
+    width: 30vw;
+    height: 100vh;
+    transform: translateX(0);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}

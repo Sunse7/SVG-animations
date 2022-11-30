@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+.cards {
+    width: 250px;
+    height: 400px;
+    margin: 150px auto;
+}
+
+.cards:hover .card--red {
+    transform: rotate(40deg);
+}
+
+.cards:hover .card--orange {
+    transform: rotate(30deg);
+}
+
+.cards:hover .card--yellow {
+    transform: rotate(20deg);
+}
+
+.cards:hover .card--lime {
+    transform: rotate(10deg);
+}
+
+.cards:hover .card--blue {
+    transform: rotate(-10deg);
+}
+
+.cards:hover .card--indigo {
+    transform: rotate(-20deg);
+}
+
+.cards:hover .card--purple {
+    transform: rotate(-30deg);
+}
+
+.cards:hover .card--pink {
+    transform: rotate(-40deg);
+}
+
+.card--red,
+.card--orange,
+.card--yellow,
+.card--lime,
+.card--green,
+.card--blue,
+.card--indigo,
+.card--purple,
+.card--pink {
+    width: 250px;
+    height: 400px;
+    border-radius: 20px;
+    position: absolute;
+    transform-origin: center 600px;
+    transition: all 0.6s linear;
+}
+
+.card--red {
+    background-color: red;
+}
+
+.card--orange {
+    background-color: orange;
+}
+
+.card--yellow {
+    background-color: yellow;
+}
+
+.card--lime {
+    background-color: lime;
+}
+
+/* Do not rotate */
+.card--green {
+    background-color: green;
+}
+
+.card--blue {
+    background-color: blue;
+}
+
+.card--indigo {
+    background-color: indigo;
+}
+
+.card--purple {
+    background-color: purple;
+}
+
+.card--pink {
+    background-color: hotpink;
+}

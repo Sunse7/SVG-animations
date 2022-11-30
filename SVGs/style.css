@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #111;
+    --primary-text-color: #fff;
+    --secondary-text-color: rgb(189, 92, 92);
+    --twitter-color: #4099ff;
+    --youtube-color: #F26768;
+}
+
+/* body {
+    margin: 0;
+}
+
+main {
+    color: var(--secondary-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+path {
+    stroke-dasharray: 603;
+    stroke: blueviolet;
+    fill: var(--secondary-text-color);
+    animation: draw 6s reverse infinite;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    60% {
+        stroke-dashoffset: -603;
+    }
+    61% {
+        stroke-dashoffset: 0;
+    }
+} */
+
+svg {
+    width: 500px;
+    height: 200px;
+
+}
+.twitter-icon-group:hover,
+.youtube-icon-group:hover,
+.facebook-icon-group:hover {
+    cursor: pointer;
+}
+
+/* Twitter icon group */
+
+.twitter-outline,
+.twitter-icon {
+    transition: all 0.3s;
+    transform-origin: 23%;
+}
+
+.twitter-icon-group:hover .twitter-outline {
+    transform: scale(0);
+}
+
+.twitter-icon-group:hover .twitter-icon {
+    transform: scale(2);
+    opacity: 0;
+    stroke: var(--twitter-color);
+}
+
+/* Youtube icon group */
+
+.youtube-outline, 
+.youtube-inner-circle, 
+.youtube-icon {
+    transition: all 0.3s;
+    transform-origin: 50%;
+}
+
+.youtube-icon-group:hover .youtube-outline {
+    transform: scale(1.2);
+}
+
+.youtube-icon-group:hover .youtube-inner-circle {
+    fill: var(--youtube-color);
+}
+
+.youtube-icon-group:hover .youtube-icon {
+    fill: white;
+}
+
+/* Facebook icon group */
+
+.facebook-detail,
+.facebook-outline {
+    transition: all 0.3s;
+    transform-origin: 77%;
+}
+
+.facebook-detail {
+    opacity: 0;
+}
+
+.facebook-icon-group:hover .facebook-outline {
+    transform: scale(1.8);
+    opacity: 0;
+}
+
+.facebook-icon-group:hover .facebook-detail {
+    transform: scale(0.8);
+    opacity: 1;
+}
